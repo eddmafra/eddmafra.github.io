@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(61, 72, 30);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3, h4 {
+    color: rgb(255, 175, 135);
+    font-family: cursive;
+}
+
+p, ul, ol {
+    color: rgb(177,237,232)
+}
+nav {
+    background-color: rgb(35,61,77);
+}
