@@ -2,6 +2,7 @@ body {
     background-color: rgb(61, 72, 30);
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
 }
 h1 {background-color: rgb(90,0,1);
 
@@ -16,4 +17,8 @@ p, ul, ol {
 }
 nav {
     background-color: rgb(35,61,77);
+}
+
+em {
+    text-decoration: underline;
 }
