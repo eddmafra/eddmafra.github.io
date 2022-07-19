@@ -41,3 +41,8 @@ em {
     margin-left: auto;
     margin-right: auto;
 }
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
