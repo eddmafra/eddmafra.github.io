@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 body {
+    position: relative;
     background-color: rgb(22, 16, 68);
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
-h1 {background-color: rgb(90,0,1);   
+h1 {
+    background-color: rgb(90,0,1);   
 }
 h1, h2, h3, h4 {
     color: rgb(255, 175, 135);
@@ -33,6 +38,7 @@ p, ul, ol {
 }
 nav {
     background-color: rgb(35,61,77);
+    padding-bottom: 10px;
 }
 em {
     text-decoration: underline;
@@ -40,4 +46,106 @@ em {
 .fotos {
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.header {
+    padding: 10px;
+    background-color: rgb(90,0,1); ;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35,61,77);
+}
+
+footer ul {
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+footer ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+footer ul li:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0);
+}
+
+footer ul li::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg,var(--i),var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+footer ul li:hover::before {
+    opacity: 1;
+}
+
+footer ul li::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: linear-gradient(45deg,var(--i),var(--j));
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+footer li:hover::after {
+    opacity: 0.5;
+}
+
+footer ul li ion-icon {
+    color:rgb(22, 16, 68);
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+footer ul li:hover ion-icon {
+  transform: scale(0);
+  color: #fff ;
+  transition-delay: 0s;
+}
+
+footer ul li .title {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+footer ul li:hover .title {
+    transform: scale(1);
+    transition-delay: 0.25s;
 }
