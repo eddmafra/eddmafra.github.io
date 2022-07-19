@@ -40,4 +40,9 @@ em {
 .fotos {
     margin-left: auto;
     margin-right: auto;
-}l
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
