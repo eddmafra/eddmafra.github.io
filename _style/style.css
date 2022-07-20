@@ -9,7 +9,6 @@ body {
     position: relative;
     background-color: rgb(22, 16, 68);
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
 h1 {
@@ -58,12 +57,20 @@ a {
     background-color: rgb(90,0,1); ;
 }
 
+.music iframe {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
+
 footer {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(35,61,77);
+    min-height: 20vh;
 }
 
 footer ul {
@@ -108,7 +115,6 @@ footer ul li:hover::before {
 footer ul li::after {
     content: '';
     position: absolute;
-    top: 10px;
     width: 100%;
     height: 100%;
     border-radius: linear-gradient(45deg,var(--i),var(--j));
@@ -116,6 +122,10 @@ footer ul li::after {
     filter: blur(15px);
     z-index: -1;
     opacity: 0;
+}
+
+footer ul li span {
+    position: absolute
 }
 
 footer li:hover::after {
@@ -136,7 +146,7 @@ footer ul li:hover ion-icon {
 }
 
 footer ul li .title {
-    color: #777;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 1.1em;
     letter-spacing: 0.1em;
