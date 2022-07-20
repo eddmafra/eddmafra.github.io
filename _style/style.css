@@ -11,13 +11,11 @@ body {
     font-size: large;
     text-align: justify;
 }
-h1 {
-    background-color: rgb(90,0,1);   
-}
 h1, h2, h3, h4 {
     color: rgb(255, 175, 135);
     font-family: cursive;
     text-align: center;
+    padding: 30px;
 }
 #foto {
     padding: 5px;
@@ -54,7 +52,7 @@ a {
 
 .header {
     padding: 10px;
-    background-color: rgb(90,0,1); ;
+    background-color: rgb(9, 4, 58);
 }
 
 .music iframe {
@@ -62,6 +60,11 @@ a {
     margin: 0 auto;
     background-color: #777;
     display: block;
+}
+.fotos img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
